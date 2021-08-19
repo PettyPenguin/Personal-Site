@@ -1,0 +1,199 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  /* this is the default font size, 16px (static size) = 100% (dynamic size) = 1em (dynamic size) */
+}
+
+h1 {
+  font-size: 6.25rem;
+  /* 100px / 16px default = 6.25 => 625%. can use rem measurement for least errors which disregards parent measurement, other font measurements take parent measurement into account */
+  margin: 50px auto 0 auto;
+  /* this is to center the element */
+  font-family: 'Caveat', cursive;
+  color: #66BFBF;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color: #66BFBF;
+  font-style: italic;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #11999E;
+}
+
+p {
+  line-height: 2;
+}
+
+a {
+  color: #11999E;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #EAF6F6;
+}
+
+hr {
+  color: #EAF6F6;
+  border-style: dotted none none none;
+  border-width: .6rem;
+  width: 5rem;
+  margin: 100px auto;
+}
+
+.top-container {
+  background-color: #E4F9F5;
+  position: relative;
+  padding-top: 100px;
+}
+
+.dev {
+  text-decoration: underline;
+}
+
+.intro {
+  width: 30%;
+  margin: auto;
+}
+
+.middle-container {}
+
+.profile {
+  margin: 50px auto 50px auto;
+}
+
+.skills {
+  margin: 50px auto 50px auto;
+}
+
+.cat {
+  height: 14rem;
+  width: 14rem;
+}
+
+.skill-row {
+  width: 50%;
+  margin: auto;
+  /* centers the element */
+  text-align: left;
+  overflow: hidden;
+}
+
+.computer {
+  height: 25rem;
+  width: 25rem;
+  float: left;
+  margin-right: 30px;
+}
+
+.excel {
+  height: 18rem;
+  width: 18rem;
+  float: right;
+  margin-left: 30px;
+  margin-bottom: 50px;
+}
+
+.contact-me {
+  margin: 50px auto 50px auto;
+}
+
+.bottom-container {
+  background-color: #66BFBF;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.button {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  color: #FFFFFF;
+  font-family: Brush Script MT;
+  font-size: 40px;
+  font-weight: 100;
+  padding: 40px;
+  background-color: #66BFBF;
+  -webkit-box-shadow: 1px 1px 20px 0 #000000;
+  -moz-box-shadow: 1px 1px 20px 0 #000000;
+  box-shadow: 1px 1px 20px 0 #000000;
+  text-shadow: 1px 1px 20px #000000;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.button:hover {
+  border: solid #337FED 1px;
+  background: #1E62D0;
+  background-image: -webkit-linear-gradient(top, #1E62D0, #3D94F6);
+  background-image: -moz-linear-gradient(top, #1E62D0, #3D94F6);
+  background-image: -ms-linear-gradient(top, #1E62D0, #3D94F6);
+  background-image: -o-linear-gradient(top, #1E62D0, #3D94F6);
+  background-image: -webkit-gradient(to bottom, #1E62D0, #3D94F6);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.footer-link {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.copyright {
+  color: #EAF6F6;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 50px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+}
+
+/* notes
+1. display property
+  a. block - will take up the entire width of page and height of text, can change dimensions, default ex. <p>, <h1>
+  b. inline - will only take up the dimensions of contents, can't change dimensions, default ex. span <span>, image <img>, a <a>
+  c. inline-block - best of both worlds, can occupy the same line and change width
+  d. none - gets rid of the element and other elements around act as if it's not there
+honorable mention: "visibility: hidden" makes the element invisibile but other elements around still act as if it's there
+
+2. positioning
+  a. static - the default positioning of the elements
+  b. relative - elements will always be relative to the original default positioning
+    - img {
+        position: relative;
+        left: 30px;
+    }
+    this will move the img 30 px to the right from the left side of the original position. can use top, bottom, left, right.
+  c. absolute - elements will be relative to their parent element, usually the body
+    - img {
+        position: absolute;
+        left: 30px;
+    }
+    this will move the img 30 px from the left side of the body
+    - in order to use absolute positioning within a parent, one of its parents must have "position: relative", otherwise it'll be relative to the body
+  d. fixed - element won't move when scrolling, will stay fixed on the screen with no relative position to other elements
+    - headers
+
+*/
